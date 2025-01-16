@@ -1,0 +1,386 @@
+
+Call:
+lm(formula = CPI ~ . + Air_Transport_Freight:Goods_Exports + 
+    Broad_Money:Account_Balance + Broad_Money:Health_Expend + 
+    Broad_Money:Goods_Exports + Broad_Money:GDP_Capita + Broad_Money:Gini_Index + 
+    Broad_Money:Imports_Goods_Services + Broad_Money:Labor_tax_Contrib + 
+    Broad_Money:Unemployment + Broad_Money:Time + Cent_Govt_Dep:GDP_Capita + 
+    Cent_Govt_Dep:Imports_Goods_Services + Cent_Govt_Dep:Region + 
+    Account_Balance:Health_Expend + Account_Balance:Govt_Consum_Exp + 
+    Account_Balance:Time + Education_Expend:Region + Health_Expend:Energy_Imports + 
+    Health_Expend:Govt_Consum_Exp + Health_Expend:Region + Power_Consump:Region + 
+    Energy_Imports:GDP_Capita + Energy_Imports:Govt_Consum_Exp + 
+    Goods_Exports:Labor_Particp + Goods_Exports:Manufacturing_Value + 
+    Goods_Exports:Time + Goods_Exports:Region + Final_consump_Exp:Imports_Goods_Services + 
+    Final_consump_Exp:Labor_Particp + Final_consump_Exp:Manufacturing_Value + 
+    Final_consump_Exp:Time + Final_consump_Exp:Region + FDI:GDP_Capita + 
+    GDP_Capita:Govt_Consum_Exp + GDP_Capita:Manufacturing_Value + 
+    GDP_Capita:Unemployment + Govt_Consum_Exp:Gini_Index + Govt_Consum_Exp:Imports_Goods_Services + 
+    Govt_Consum_Exp:Manufacturing_Value + Govt_Consum_Exp:Unemployment + 
+    Govt_Consum_Exp:Top_10_Income + Govt_Consum_Exp:Region + 
+    Gini_Index:Human_Capital_Index + Human_Capital_Index:Top_10_Income + 
+    Human_Capital_Index:Region + Imports_Goods_Services:Manufacturing_Value + 
+    Imports_Goods_Services:Time + Imports_Goods_Services:Region + 
+    Labor_Particp:Region + Labor_tax_Contrib:Unemployment + Labor_tax_Contrib:Region + 
+    Manufacturing_Value:Time + Manufacturing_Value:Region + Poverty_Headcount:Time + 
+    Poverty_Headcount:Region + Unemployment:Region + Time:Region, 
+    data = marks_new_dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-184.40  -26.22   -5.04   16.21  631.59 
+
+Coefficients: (1 not defined because of singularities)
+                                                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             -1.732e+02  1.910e+02  -0.907 0.364530    
+Air_Transport_Freight                                    2.390e-03  1.142e-03   2.091 0.036572 *  
+Broad_Money                                             -3.273e-01  5.649e-01  -0.579 0.562359    
+Cent_Govt_Dep                                            6.705e-01  2.037e-01   3.291 0.001011 ** 
+Account_Balance                                         -1.094e+00  5.392e-01  -2.028 0.042620 *  
+Education_Expend                                         1.275e+00  6.491e-01   1.964 0.049602 *  
+Health_Expend                                            4.607e-02  7.400e-03   6.226 5.48e-10 ***
+Power_Consump                                           -4.099e-03  1.934e-03  -2.119 0.034157 *  
+Energy_Imports                                           1.029e-01  7.042e-02   1.462 0.143916    
+Goods_Exports                                            1.488e+00  8.039e-01   1.852 0.064189 .  
+Final_consump_Exp                                        2.320e+00  1.030e+00   2.252 0.024401 *  
+FDI                                                      3.398e-02  3.688e-02   0.921 0.356880    
+GDP_Capita                                               4.243e-05  4.735e-04   0.090 0.928608    
+Govt_Consum_Exp                                         -5.668e+00  2.356e+00  -2.406 0.016193 *  
+Gini_Index                                               2.476e+01  1.092e+01   2.268 0.023403 *  
+Human_Capital_Index                                      1.268e+02  2.379e+02   0.533 0.593929    
+Imports_Goods_Services                                   1.713e-01  6.945e-01   0.247 0.805147    
+Labor_Particp                                           -1.520e+00  1.463e+00  -1.039 0.299042    
+Labor_tax_Contrib                                        5.045e+00  8.354e-01   6.039 1.75e-09 ***
+LPI                                                     -1.394e+01  5.214e+00  -2.673 0.007556 ** 
+Manufacturing_Value                                      1.012e+01  1.979e+00   5.112 3.39e-07 ***
+Poverty_Headcount                                        1.526e+00  1.046e+00   1.459 0.144696    
+Unemployment                                             7.143e+00  1.865e+00   3.831 0.000130 ***
+Top_10_Income                                           -3.293e+01  1.490e+01  -2.210 0.027176 *  
+Time2010                                                 6.706e+00  5.295e+01   0.127 0.899223    
+Time2011                                                 3.477e+00  5.380e+01   0.065 0.948477    
+Time2012                                                 3.355e+01  5.466e+01   0.614 0.539367    
+Time2013                                                 4.068e+01  5.691e+01   0.715 0.474768    
+Time2014                                                 5.812e+01  5.771e+01   1.007 0.313982    
+Time2015                                                 8.060e+01  5.856e+01   1.376 0.168839    
+Time2016                                                 1.031e+02  5.922e+01   1.740 0.081914 .  
+Time2017                                                 6.564e+01  5.898e+01   1.113 0.265853    
+Time2018                                                 5.344e+01  6.061e+01   0.882 0.377961    
+Time2019                                                 8.125e+01  6.077e+01   1.337 0.181332    
+Time2020                                                 1.614e+02  6.066e+01   2.660 0.007857 ** 
+Time2021                                                 8.501e+01  5.650e+01   1.505 0.132526    
+Time2022                                                 8.913e+01  5.872e+01   1.518 0.129159    
+Time2023                                                 2.523e+01  6.439e+01   0.392 0.695235    
+RegionEurope & Central Asia                              2.947e+02  1.092e+02   2.699 0.007005 ** 
+RegionLatin America & Caribbean                          3.149e+02  1.414e+02   2.227 0.026054 *  
+RegionMiddle East & North Africa                        -2.211e+02  1.764e+02  -1.253 0.210198    
+RegionNorth America                                     -4.343e+02  1.656e+03  -0.262 0.793182    
+RegionSouth Asia                                         4.319e+01  2.614e+02   0.165 0.868792    
+RegionSub-Saharan Africa                                 9.500e+01  1.079e+02   0.880 0.378855    
+Air_Transport_Freight:Goods_Exports                     -1.641e-05  1.773e-05  -0.925 0.354817    
+Broad_Money:Account_Balance                              2.068e-02  6.053e-03   3.417 0.000643 ***
+Broad_Money:Health_Expend                               -1.277e-04  3.797e-05  -3.362 0.000783 ***
+Broad_Money:Goods_Exports                               -3.114e-02  5.053e-03  -6.162 8.20e-10 ***
+Broad_Money:GDP_Capita                                   1.599e-05  3.468e-06   4.610 4.20e-06 ***
+Broad_Money:Gini_Index                                   2.085e-02  1.416e-02   1.472 0.141215    
+Broad_Money:Imports_Goods_Services                       2.891e-02  4.948e-03   5.843 5.69e-09 ***
+Broad_Money:Labor_tax_Contrib                           -3.090e-02  5.398e-03  -5.725 1.14e-08 ***
+Broad_Money:Unemployment                                -3.937e-02  1.443e-02  -2.728 0.006409 ** 
+Broad_Money:Time2010                                     1.430e-01  1.866e-01   0.766 0.443718    
+Broad_Money:Time2011                                    -4.449e-05  1.818e-01   0.000 0.999805    
+Broad_Money:Time2012                                    -5.623e-02  1.862e-01  -0.302 0.762700    
+Broad_Money:Time2013                                    -1.316e-01  1.839e-01  -0.715 0.474464    
+Broad_Money:Time2014                                    -1.116e-01  1.819e-01  -0.613 0.539612    
+Broad_Money:Time2015                                    -2.857e-01  1.837e-01  -1.555 0.120152    
+Broad_Money:Time2016                                    -2.430e-01  1.844e-01  -1.318 0.187580    
+Broad_Money:Time2017                                    -3.733e-01  1.894e-01  -1.970 0.048889 *  
+Broad_Money:Time2018                                    -3.086e-01  2.007e-01  -1.538 0.124258    
+Broad_Money:Time2019                                    -5.005e-01  1.889e-01  -2.650 0.008088 ** 
+Broad_Money:Time2020                                    -2.634e-01  1.786e-01  -1.474 0.140468    
+Broad_Money:Time2021                                    -4.103e-01  1.790e-01  -2.292 0.021977 *  
+Broad_Money:Time2022                                    -3.738e-01  1.830e-01  -2.043 0.041141 *  
+Broad_Money:Time2023                                    -6.185e-01  1.918e-01  -3.225 0.001273 ** 
+Cent_Govt_Dep:GDP_Capita                                -8.602e-06  3.752e-06  -2.293 0.021940 *  
+Cent_Govt_Dep:Imports_Goods_Services                    -7.302e-03  2.806e-03  -2.602 0.009317 ** 
+Cent_Govt_Dep:RegionEurope & Central Asia               -1.982e-03  1.574e-01  -0.013 0.989956    
+Cent_Govt_Dep:RegionLatin America & Caribbean           -1.368e-01  2.467e-01  -0.554 0.579330    
+Cent_Govt_Dep:RegionMiddle East & North Africa           8.122e-02  4.862e-01   0.167 0.867330    
+Cent_Govt_Dep:RegionNorth America                        1.808e+00  2.527e+00   0.715 0.474411    
+Cent_Govt_Dep:RegionSouth Asia                          -6.619e-02  7.007e-01  -0.094 0.924752    
+Cent_Govt_Dep:RegionSub-Saharan Africa                  -8.809e-01  2.905e-01  -3.033 0.002445 ** 
+Account_Balance:Health_Expend                           -1.389e-05  1.391e-04  -0.100 0.920494    
+Account_Balance:Govt_Consum_Exp                         -3.703e-03  4.634e-03  -0.799 0.424327    
+Account_Balance:Time2010                                 2.539e-01  3.797e-01   0.669 0.503777    
+Account_Balance:Time2011                                 5.841e-01  3.489e-01   1.674 0.094239 .  
+Account_Balance:Time2012                                 5.571e-01  3.515e-01   1.585 0.113047    
+Account_Balance:Time2013                                 5.755e-01  4.192e-01   1.373 0.169913    
+Account_Balance:Time2014                                 3.088e-01  5.376e-01   0.574 0.565799    
+Account_Balance:Time2015                                 1.889e-01  6.441e-01   0.293 0.769346    
+Account_Balance:Time2016                                 2.627e-02  7.314e-01   0.036 0.971354    
+Account_Balance:Time2017                                -8.313e-01  7.005e-01  -1.187 0.235464    
+Account_Balance:Time2018                                -3.204e-01  5.893e-01  -0.544 0.586661    
+Account_Balance:Time2019                                 2.369e-01  5.830e-01   0.406 0.684535    
+Account_Balance:Time2020                                 1.444e-01  6.076e-01   0.238 0.812091    
+Account_Balance:Time2021                                 4.744e-01  6.113e-01   0.776 0.437713    
+Account_Balance:Time2022                                 9.767e-01  6.182e-01   1.580 0.114213    
+Account_Balance:Time2023                                -1.033e+00  7.288e-01  -1.417 0.156515    
+Education_Expend:RegionEurope & Central Asia            -9.345e-01  8.128e-01  -1.150 0.250363    
+Education_Expend:RegionLatin America & Caribbean        -3.195e+00  9.075e-01  -3.520 0.000438 ***
+Education_Expend:RegionMiddle East & North Africa        6.990e-01  1.558e+00   0.449 0.653664    
+Education_Expend:RegionNorth America                    -1.286e+00  1.167e+01  -0.110 0.912265    
+Education_Expend:RegionSouth Asia                       -6.768e-01  1.492e+00  -0.454 0.650112    
+Education_Expend:RegionSub-Saharan Africa               -5.055e-01  7.858e-01  -0.643 0.520041    
+Health_Expend:Energy_Imports                             4.935e-05  1.286e-05   3.839 0.000126 ***
+Health_Expend:Govt_Consum_Exp                           -9.490e-04  2.295e-04  -4.136 3.64e-05 ***
+Health_Expend:RegionEurope & Central Asia               -1.814e-02  3.999e-03  -4.537 5.93e-06 ***
+Health_Expend:RegionLatin America & Caribbean            4.982e-03  7.058e-03   0.706 0.480299    
+Health_Expend:RegionMiddle East & North Africa          -1.842e-02  6.694e-03  -2.752 0.005962 ** 
+Health_Expend:RegionNorth America                       -2.784e-02  1.631e-02  -1.707 0.087946 .  
+Health_Expend:RegionSouth Asia                          -1.633e-02  2.542e-02  -0.643 0.520543    
+Health_Expend:RegionSub-Saharan Africa                   3.684e-04  9.394e-03   0.039 0.968719    
+Power_Consump:RegionEurope & Central Asia                3.946e-03  1.993e-03   1.980 0.047768 *  
+Power_Consump:RegionLatin America & Caribbean            7.318e-03  3.477e-03   2.105 0.035389 *  
+Power_Consump:RegionMiddle East & North Africa           7.661e-03  2.371e-03   3.230 0.001250 ** 
+Power_Consump:RegionNorth America                        8.551e-03  9.888e-03   0.865 0.387237    
+Power_Consump:RegionSouth Asia                           8.471e-03  7.202e-03   1.176 0.239623    
+Power_Consump:RegionSub-Saharan Africa                   4.038e-03  2.719e-03   1.485 0.137604    
+Energy_Imports:GDP_Capita                               -3.213e-06  6.360e-07  -5.052 4.64e-07 ***
+Energy_Imports:Govt_Consum_Exp                          -7.060e-03  4.395e-03  -1.606 0.108332    
+Goods_Exports:Labor_Particp                              1.397e-02  9.551e-03   1.462 0.143813    
+Goods_Exports:Manufacturing_Value                       -9.705e-02  2.285e-02  -4.247 2.23e-05 ***
+Goods_Exports:Time2010                                   3.188e-02  6.148e-01   0.052 0.958649    
+Goods_Exports:Time2011                                  -3.123e-01  5.954e-01  -0.524 0.599990    
+Goods_Exports:Time2012                                  -2.654e-01  6.332e-01  -0.419 0.675182    
+Goods_Exports:Time2013                                  -7.033e-01  6.801e-01  -1.034 0.301155    
+Goods_Exports:Time2014                                  -2.158e-01  7.010e-01  -0.308 0.758256    
+Goods_Exports:Time2015                                  -1.532e-01  6.861e-01  -0.223 0.823290    
+Goods_Exports:Time2016                                  -4.156e-01  7.479e-01  -0.556 0.578503    
+Goods_Exports:Time2017                                   6.042e-01  7.180e-01   0.841 0.400148    
+Goods_Exports:Time2018                                   1.129e+00  7.441e-01   1.517 0.129402    
+Goods_Exports:Time2019                                   1.971e-02  7.272e-01   0.027 0.978376    
+Goods_Exports:Time2020                                  -3.660e-01  7.020e-01  -0.521 0.602123    
+Goods_Exports:Time2021                                   6.128e-01  6.611e-01   0.927 0.354016    
+Goods_Exports:Time2022                                   1.680e-01  6.821e-01   0.246 0.805413    
+Goods_Exports:Time2023                                   1.503e+00  6.746e-01   2.228 0.025931 *  
+Goods_Exports:RegionEurope & Central Asia               -1.470e+00  4.367e-01  -3.367 0.000769 ***
+Goods_Exports:RegionLatin America & Caribbean            2.878e-01  5.226e-01   0.551 0.581801    
+Goods_Exports:RegionMiddle East & North Africa           6.299e-01  5.440e-01   1.158 0.246931    
+Goods_Exports:RegionNorth America                        8.469e+00  1.505e+01   0.563 0.573612    
+Goods_Exports:RegionSouth Asia                          -8.355e-01  9.577e-01  -0.872 0.383063    
+Goods_Exports:RegionSub-Saharan Africa                   1.041e+00  4.408e-01   2.362 0.018242 *  
+Final_consump_Exp:Imports_Goods_Services                -3.508e-02  4.485e-03  -7.821 7.30e-15 ***
+Final_consump_Exp:Labor_Particp                          1.499e-02  1.313e-02   1.142 0.253729    
+Final_consump_Exp:Manufacturing_Value                   -1.491e-01  2.454e-02  -6.076 1.39e-09 ***
+Final_consump_Exp:Time2010                               8.715e-02  5.728e-01   0.152 0.879066    
+Final_consump_Exp:Time2011                              -8.203e-02  5.704e-01  -0.144 0.885653    
+Final_consump_Exp:Time2012                              -2.439e-01  5.951e-01  -0.410 0.681937    
+Final_consump_Exp:Time2013                              -3.680e-01  6.328e-01  -0.582 0.560946    
+Final_consump_Exp:Time2014                              -3.244e-01  6.512e-01  -0.498 0.618364    
+Final_consump_Exp:Time2015                              -4.756e-01  6.342e-01  -0.750 0.453384    
+Final_consump_Exp:Time2016                              -7.143e-01  6.660e-01  -1.072 0.283600    
+Final_consump_Exp:Time2017                               2.168e-01  6.576e-01   0.330 0.741610    
+Final_consump_Exp:Time2018                               7.258e-01  6.932e-01   1.047 0.295192    
+Final_consump_Exp:Time2019                              -2.313e-01  6.923e-01  -0.334 0.738306    
+Final_consump_Exp:Time2020                              -1.208e+00  6.517e-01  -1.854 0.063891 .  
+Final_consump_Exp:Time2021                               2.547e-01  6.261e-01   0.407 0.684225    
+Final_consump_Exp:Time2022                              -3.893e-01  6.406e-01  -0.608 0.543401    
+Final_consump_Exp:Time2023                               6.319e-01  6.651e-01   0.950 0.342162    
+Final_consump_Exp:RegionEurope & Central Asia           -1.831e+00  5.033e-01  -3.637 0.000280 ***
+Final_consump_Exp:RegionLatin America & Caribbean       -8.779e-02  5.941e-01  -0.148 0.882535    
+Final_consump_Exp:RegionMiddle East & North Africa       1.525e+00  5.131e-01   2.973 0.002976 ** 
+Final_consump_Exp:RegionNorth America                    2.255e+00  1.982e+01   0.114 0.909437    
+Final_consump_Exp:RegionSouth Asia                      -3.329e-01  8.236e-01  -0.404 0.686083    
+Final_consump_Exp:RegionSub-Saharan Africa               9.269e-01  4.395e-01   2.109 0.035016 *  
+FDI:GDP_Capita                                          -2.356e-07  7.883e-07  -0.299 0.765025    
+GDP_Capita:Govt_Consum_Exp                              -5.586e-05  1.431e-05  -3.904 9.66e-05 ***
+GDP_Capita:Manufacturing_Value                          -1.021e-04  1.346e-05  -7.589 4.31e-14 ***
+GDP_Capita:Unemployment                                  5.585e-05  2.423e-05   2.305 0.021246 *  
+Govt_Consum_Exp:Gini_Index                              -4.261e-01  2.248e-01  -1.896 0.058114 .  
+Govt_Consum_Exp:Imports_Goods_Services                   5.458e-02  8.890e-03   6.140 9.39e-10 ***
+Govt_Consum_Exp:Manufacturing_Value                      5.305e-02  3.802e-02   1.395 0.163002    
+Govt_Consum_Exp:Unemployment                            -1.512e-01  4.376e-02  -3.454 0.000560 ***
+Govt_Consum_Exp:Top_10_Income                            6.925e-01  2.931e-01   2.363 0.018198 *  
+Govt_Consum_Exp:RegionEurope & Central Asia              5.831e+00  8.072e-01   7.224 6.45e-13 ***
+Govt_Consum_Exp:RegionLatin America & Caribbean          5.485e+00  8.858e-01   6.193 6.76e-10 ***
+Govt_Consum_Exp:RegionMiddle East & North Africa         1.892e+00  8.662e-01   2.184 0.029037 *  
+Govt_Consum_Exp:RegionNorth America                      9.522e+00  1.203e+01   0.792 0.428717    
+Govt_Consum_Exp:RegionSouth Asia                         2.045e+00  2.402e+00   0.851 0.394609    
+Govt_Consum_Exp:RegionSub-Saharan Africa                -2.771e+00  7.060e-01  -3.924 8.90e-05 ***
+Gini_Index:Human_Capital_Index                          -3.236e+01  1.861e+01  -1.739 0.082193 .  
+Human_Capital_Index:Top_10_Income                        3.541e+01  2.556e+01   1.386 0.165982    
+Human_Capital_Index:RegionEurope & Central Asia         -1.763e+02  8.210e+01  -2.147 0.031873 *  
+Human_Capital_Index:RegionLatin America & Caribbean     -8.614e+01  1.402e+02  -0.615 0.538920    
+Human_Capital_Index:RegionMiddle East & North Africa     1.882e+02  1.102e+02   1.708 0.087722 .  
+Human_Capital_Index:RegionNorth America                  1.194e+02  2.775e+02   0.430 0.667130    
+Human_Capital_Index:RegionSouth Asia                     7.879e+01  2.275e+02   0.346 0.729101    
+Human_Capital_Index:RegionSub-Saharan Africa            -4.688e+01  7.846e+01  -0.597 0.550238    
+Imports_Goods_Services:Manufacturing_Value               1.131e-01  2.472e-02   4.574 4.98e-06 ***
+Imports_Goods_Services:Time2010                         -1.439e-01  6.175e-01  -0.233 0.815819    
+Imports_Goods_Services:Time2011                          1.962e-01  5.953e-01   0.330 0.741790    
+Imports_Goods_Services:Time2012                          3.477e-01  6.275e-01   0.554 0.579592    
+Imports_Goods_Services:Time2013                          7.898e-01  6.729e-01   1.174 0.240642    
+Imports_Goods_Services:Time2014                          1.015e-01  7.096e-01   0.143 0.886292    
+Imports_Goods_Services:Time2015                          1.716e-02  6.880e-01   0.025 0.980104    
+Imports_Goods_Services:Time2016                          2.814e-01  7.480e-01   0.376 0.706807    
+Imports_Goods_Services:Time2017                         -7.757e-01  7.271e-01  -1.067 0.286078    
+Imports_Goods_Services:Time2018                         -1.511e+00  7.463e-01  -2.024 0.043052 *  
+Imports_Goods_Services:Time2019                         -2.807e-01  7.222e-01  -0.389 0.697580    
+Imports_Goods_Services:Time2020                          2.694e-01  7.042e-01   0.383 0.702113    
+Imports_Goods_Services:Time2021                         -6.610e-01  6.810e-01  -0.971 0.331846    
+Imports_Goods_Services:Time2022                         -3.215e-01  6.883e-01  -0.467 0.640474    
+Imports_Goods_Services:Time2023                         -1.729e+00  6.741e-01  -2.564 0.010392 *  
+Imports_Goods_Services:RegionEurope & Central Asia       5.640e-01  4.447e-01   1.268 0.204802    
+Imports_Goods_Services:RegionLatin America & Caribbean  -4.065e-01  5.161e-01  -0.788 0.430908    
+Imports_Goods_Services:RegionMiddle East & North Africa -1.637e+00  5.702e-01  -2.872 0.004112 ** 
+Imports_Goods_Services:RegionNorth America              -2.504e+00  1.249e+01  -0.200 0.841114    
+Imports_Goods_Services:RegionSouth Asia                  1.153e-01  1.210e+00   0.095 0.924069    
+Imports_Goods_Services:RegionSub-Saharan Africa         -6.496e-01  3.904e-01  -1.664 0.096206 .  
+Labor_Particp:RegionEurope & Central Asia                1.248e+00  6.738e-01   1.853 0.064011 .  
+Labor_Particp:RegionLatin America & Caribbean           -1.311e+00  7.967e-01  -1.645 0.100030    
+Labor_Particp:RegionMiddle East & North Africa          -7.499e-01  8.472e-01  -0.885 0.376137    
+Labor_Particp:RegionNorth America                       -1.630e+00  4.919e+00  -0.331 0.740315    
+Labor_Particp:RegionSouth Asia                          -3.046e-01  1.214e+00  -0.251 0.801927    
+Labor_Particp:RegionSub-Saharan Africa                   8.705e-01  7.005e-01   1.243 0.214080    
+Labor_tax_Contrib:Unemployment                           2.998e-02  3.020e-02   0.993 0.320899    
+Labor_tax_Contrib:RegionEurope & Central Asia           -3.955e+00  6.761e-01  -5.850 5.45e-09 ***
+Labor_tax_Contrib:RegionLatin America & Caribbean       -3.082e+00  7.564e-01  -4.074 4.74e-05 ***
+Labor_tax_Contrib:RegionMiddle East & North Africa      -1.813e+00  9.809e-01  -1.848 0.064702 .  
+Labor_tax_Contrib:RegionNorth America                    5.285e+00  9.151e+00   0.578 0.563613    
+Labor_tax_Contrib:RegionSouth Asia                      -2.199e+00  1.299e+00  -1.694 0.090453 .  
+Labor_tax_Contrib:RegionSub-Saharan Africa              -5.414e+00  7.680e-01  -7.050 2.23e-12 ***
+Manufacturing_Value:Time2010                            -1.238e-01  9.364e-01  -0.132 0.894822    
+Manufacturing_Value:Time2011                             6.966e-02  9.233e-01   0.075 0.939863    
+Manufacturing_Value:Time2012                             1.895e-01  9.309e-01   0.204 0.838696    
+Manufacturing_Value:Time2013                             9.810e-01  9.548e-01   1.027 0.304306    
+Manufacturing_Value:Time2014                             9.476e-01  9.528e-01   0.994 0.320073    
+Manufacturing_Value:Time2015                             9.461e-01  9.484e-01   0.998 0.318568    
+Manufacturing_Value:Time2016                             1.409e+00  9.351e-01   1.507 0.131895    
+Manufacturing_Value:Time2017                             1.194e+00  9.270e-01   1.288 0.197882    
+Manufacturing_Value:Time2018                             1.418e+00  9.348e-01   1.517 0.129498    
+Manufacturing_Value:Time2019                             1.957e+00  9.342e-01   2.095 0.036248 *  
+Manufacturing_Value:Time2020                             2.075e+00  9.636e-01   2.153 0.031417 *  
+Manufacturing_Value:Time2021                             1.598e+00  9.359e-01   1.707 0.087898 .  
+Manufacturing_Value:Time2022                             3.750e+00  9.566e-01   3.920 9.07e-05 ***
+Manufacturing_Value:Time2023                             2.945e+00  1.005e+00   2.930 0.003415 ** 
+Manufacturing_Value:RegionEurope & Central Asia          1.964e+00  7.090e-01   2.770 0.005645 ** 
+Manufacturing_Value:RegionLatin America & Caribbean      5.276e+00  7.476e-01   7.056 2.13e-12 ***
+Manufacturing_Value:RegionMiddle East & North Africa     1.952e+00  1.095e+00   1.782 0.074839 .  
+Manufacturing_Value:RegionNorth America                  6.993e+00  1.233e+01   0.567 0.570624    
+Manufacturing_Value:RegionSouth Asia                     5.329e-01  1.970e+00   0.271 0.786778    
+Manufacturing_Value:RegionSub-Saharan Africa            -2.970e+00  7.398e-01  -4.015 6.09e-05 ***
+Poverty_Headcount:Time2010                              -8.675e-01  9.583e-01  -0.905 0.365412    
+Poverty_Headcount:Time2011                               6.061e-02  9.918e-01   0.061 0.951271    
+Poverty_Headcount:Time2012                              -6.808e-01  9.374e-01  -0.726 0.467711    
+Poverty_Headcount:Time2013                              -9.099e-01  9.996e-01  -0.910 0.362798    
+Poverty_Headcount:Time2014                              -8.978e-01  9.661e-01  -0.929 0.352796    
+Poverty_Headcount:Time2015                              -3.616e-01  1.005e+00  -0.360 0.718948    
+Poverty_Headcount:Time2016                              -9.419e-01  9.834e-01  -0.958 0.338246    
+Poverty_Headcount:Time2017                              -1.318e+00  1.042e+00  -1.264 0.206168    
+Poverty_Headcount:Time2018                              -2.061e+00  9.881e-01  -2.086 0.037064 *  
+Poverty_Headcount:Time2019                               3.995e-02  1.052e+00   0.038 0.969710    
+Poverty_Headcount:Time2020                              -2.243e+00  1.105e+00  -2.029 0.042523 *  
+Poverty_Headcount:Time2021                              -2.801e+00  9.482e-01  -2.954 0.003166 ** 
+Poverty_Headcount:Time2022                              -1.638e+00  1.101e+00  -1.488 0.136915    
+Poverty_Headcount:Time2023                              -1.536e-01  1.554e+00  -0.099 0.921298    
+Poverty_Headcount:RegionEurope & Central Asia           -1.439e+00  9.360e-01  -1.538 0.124240    
+Poverty_Headcount:RegionLatin America & Caribbean       -8.518e-01  8.720e-01  -0.977 0.328724    
+Poverty_Headcount:RegionMiddle East & North Africa       5.117e-01  1.698e+00   0.301 0.763128    
+Poverty_Headcount:RegionNorth America                           NA         NA      NA       NA    
+Poverty_Headcount:RegionSouth Asia                      -6.306e-01  1.765e+00  -0.357 0.720866    
+Poverty_Headcount:RegionSub-Saharan Africa              -6.530e-01  8.471e-01  -0.771 0.440865    
+Unemployment:RegionEurope & Central Asia                -5.346e+00  1.350e+00  -3.959 7.72e-05 ***
+Unemployment:RegionLatin America & Caribbean            -1.168e+00  1.475e+00  -0.792 0.428582    
+Unemployment:RegionMiddle East & North Africa           -8.119e+00  1.764e+00  -4.603 4.35e-06 ***
+Unemployment:RegionNorth America                        -2.423e+01  1.707e+01  -1.419 0.155870    
+Unemployment:RegionSouth Asia                           -1.761e+00  3.174e+00  -0.555 0.579043    
+Unemployment:RegionSub-Saharan Africa                   -1.738e+00  1.325e+00  -1.311 0.189863    
+Time2010:RegionEurope & Central Asia                     2.533e+01  1.936e+01   1.308 0.190929    
+Time2011:RegionEurope & Central Asia                     1.757e+01  1.882e+01   0.934 0.350537    
+Time2012:RegionEurope & Central Asia                     2.179e+01  1.894e+01   1.150 0.250114    
+Time2013:RegionEurope & Central Asia                     2.573e+01  1.918e+01   1.341 0.179956    
+Time2014:RegionEurope & Central Asia                     2.173e+01  1.939e+01   1.121 0.262564    
+Time2015:RegionEurope & Central Asia                     5.279e+00  1.944e+01   0.272 0.785995    
+Time2016:RegionEurope & Central Asia                     1.053e+01  1.953e+01   0.539 0.590004    
+Time2017:RegionEurope & Central Asia                     1.863e+01  2.010e+01   0.927 0.353905    
+Time2018:RegionEurope & Central Asia                     2.367e+01  2.059e+01   1.150 0.250328    
+Time2019:RegionEurope & Central Asia                     2.920e+00  1.983e+01   0.147 0.882913    
+Time2020:RegionEurope & Central Asia                     3.535e+01  2.084e+01   1.696 0.089912 .  
+Time2021:RegionEurope & Central Asia                     1.977e+01  2.038e+01   0.970 0.332210    
+Time2022:RegionEurope & Central Asia                     5.371e+01  2.042e+01   2.630 0.008573 ** 
+Time2023:RegionEurope & Central Asia                     4.239e+01  1.989e+01   2.131 0.033149 *  
+Time2010:RegionLatin America & Caribbean                 1.190e+01  2.038e+01   0.584 0.559420    
+Time2011:RegionLatin America & Caribbean                 1.893e+01  2.034e+01   0.930 0.352197    
+Time2012:RegionLatin America & Caribbean                 1.827e+01  2.047e+01   0.892 0.372255    
+Time2013:RegionLatin America & Caribbean                 2.697e+01  2.064e+01   1.307 0.191266    
+Time2014:RegionLatin America & Caribbean                 2.000e+01  2.100e+01   0.952 0.341038    
+Time2015:RegionLatin America & Caribbean                 1.267e+01  2.119e+01   0.598 0.549950    
+Time2016:RegionLatin America & Caribbean                 3.880e+00  2.141e+01   0.181 0.856186    
+Time2017:RegionLatin America & Caribbean                -8.851e+00  2.117e+01  -0.418 0.675865    
+Time2018:RegionLatin America & Caribbean                -1.246e+01  2.161e+01  -0.577 0.564167    
+Time2019:RegionLatin America & Caribbean                -2.620e+00  2.159e+01  -0.121 0.903448    
+Time2020:RegionLatin America & Caribbean                 3.288e+01  2.231e+01   1.474 0.140536    
+Time2021:RegionLatin America & Caribbean                 3.754e+01  2.209e+01   1.699 0.089399 .  
+Time2022:RegionLatin America & Caribbean                 4.311e+01  2.190e+01   1.968 0.049125 *  
+Time2023:RegionLatin America & Caribbean                 1.416e+01  2.153e+01   0.658 0.510709    
+Time2010:RegionMiddle East & North Africa                1.151e+01  2.388e+01   0.482 0.629787    
+Time2011:RegionMiddle East & North Africa                1.465e+01  2.393e+01   0.612 0.540561    
+Time2012:RegionMiddle East & North Africa                1.404e+01  2.390e+01   0.587 0.556954    
+Time2013:RegionMiddle East & North Africa                3.213e+01  2.378e+01   1.351 0.176791    
+Time2014:RegionMiddle East & North Africa                2.241e+01  2.423e+01   0.925 0.355053    
+Time2015:RegionMiddle East & North Africa                3.776e+01  2.435e+01   1.551 0.121098    
+Time2016:RegionMiddle East & North Africa                4.662e+01  2.462e+01   1.893 0.058393 .  
+Time2017:RegionMiddle East & North Africa                6.201e+01  2.429e+01   2.554 0.010715 *  
+Time2018:RegionMiddle East & North Africa                5.215e+01  2.466e+01   2.114 0.034570 *  
+Time2019:RegionMiddle East & North Africa                6.892e+01  2.482e+01   2.777 0.005514 ** 
+Time2020:RegionMiddle East & North Africa                7.714e+01  2.527e+01   3.052 0.002290 ** 
+Time2021:RegionMiddle East & North Africa                7.397e+01  2.532e+01   2.921 0.003516 ** 
+Time2022:RegionMiddle East & North Africa                5.593e+01  2.560e+01   2.185 0.028945 *  
+Time2023:RegionMiddle East & North Africa                4.879e+01  2.475e+01   1.971 0.048778 *  
+Time2010:RegionNorth America                            -3.868e+00  7.369e+01  -0.052 0.958148    
+Time2011:RegionNorth America                            -2.988e+01  6.118e+01  -0.488 0.625285    
+Time2012:RegionNorth America                            -1.921e+01  6.862e+01  -0.280 0.779548    
+Time2013:RegionNorth America                            -1.069e+01  7.536e+01  -0.142 0.887183    
+Time2014:RegionNorth America                            -1.464e+01  8.406e+01  -0.174 0.861793    
+Time2015:RegionNorth America                            -1.692e+01  1.367e+02  -0.124 0.901473    
+Time2016:RegionNorth America                             1.669e+00  1.223e+02   0.014 0.989113    
+Time2017:RegionNorth America                            -2.702e+01  1.293e+02  -0.209 0.834449    
+Time2018:RegionNorth America                            -4.454e+01  1.259e+02  -0.354 0.723544    
+Time2019:RegionNorth America                            -4.125e+01  1.228e+02  -0.336 0.736872    
+Time2020:RegionNorth America                             1.020e+01  1.457e+02   0.070 0.944199    
+Time2021:RegionNorth America                            -2.359e+01  1.462e+02  -0.161 0.871840    
+Time2022:RegionNorth America                             6.554e+00  1.506e+02   0.044 0.965295    
+Time2023:RegionNorth America                            -8.242e+01  1.496e+02  -0.551 0.581753    
+Time2010:RegionSouth Asia                                1.487e+01  3.418e+01   0.435 0.663554    
+Time2011:RegionSouth Asia                                2.531e+01  3.398e+01   0.745 0.456458    
+Time2012:RegionSouth Asia                                2.652e+01  3.443e+01   0.770 0.441249    
+Time2013:RegionSouth Asia                                4.527e+01  3.453e+01   1.311 0.189933    
+Time2014:RegionSouth Asia                                3.887e+01  3.460e+01   1.124 0.261276    
+Time2015:RegionSouth Asia                                2.428e+01  3.912e+01   0.621 0.534924    
+Time2016:RegionSouth Asia                                2.782e+01  3.987e+01   0.698 0.485305    
+Time2017:RegionSouth Asia                                2.428e+01  4.522e+01   0.537 0.591377    
+Time2018:RegionSouth Asia                                2.912e+01  4.522e+01   0.644 0.519735    
+Time2019:RegionSouth Asia                                3.268e+01  3.954e+01   0.826 0.408637    
+Time2020:RegionSouth Asia                                5.749e+01  4.542e+01   1.266 0.205769    
+Time2021:RegionSouth Asia                                6.150e+01  4.035e+01   1.524 0.127544    
+Time2022:RegionSouth Asia                                7.120e+01  4.992e+01   1.426 0.153913    
+Time2023:RegionSouth Asia                                7.324e+01  4.951e+01   1.479 0.139168    
+Time2010:RegionSub-Saharan Africa                        4.773e+00  2.160e+01   0.221 0.825129    
+Time2011:RegionSub-Saharan Africa                        2.016e+01  2.119e+01   0.951 0.341449    
+Time2012:RegionSub-Saharan Africa                        2.209e+01  2.122e+01   1.041 0.297915    
+Time2013:RegionSub-Saharan Africa                        3.226e+01  2.134e+01   1.512 0.130748    
+Time2014:RegionSub-Saharan Africa                        2.719e+01  2.171e+01   1.253 0.210445    
+Time2015:RegionSub-Saharan Africa                        2.533e+01  2.196e+01   1.153 0.248822    
+Time2016:RegionSub-Saharan Africa                        3.220e+01  2.224e+01   1.448 0.147743    
+Time2017:RegionSub-Saharan Africa                        1.939e+01  2.306e+01   0.841 0.400492    
+Time2018:RegionSub-Saharan Africa                        2.955e+01  2.393e+01   1.235 0.217063    
+Time2019:RegionSub-Saharan Africa                        3.691e+01  2.246e+01   1.644 0.100323    
+Time2020:RegionSub-Saharan Africa                        8.332e+01  2.367e+01   3.520 0.000439 ***
+Time2021:RegionSub-Saharan Africa                        1.006e+02  2.275e+01   4.423 1.01e-05 ***
+Time2022:RegionSub-Saharan Africa                        9.173e+01  2.447e+01   3.749 0.000181 ***
+Time2023:RegionSub-Saharan Africa                        9.674e+01  2.376e+01   4.072 4.79e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 59.05 on 2889 degrees of freedom
+Multiple R-squared:  0.4266,	Adjusted R-squared:  0.3585 
+F-statistic: 6.266 on 343 and 2889 DF,  p-value: < 2.2e-16
+
